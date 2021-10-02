@@ -1,0 +1,663 @@
+/* body */
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #000000;;
+}
+
+header {
+  height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* IDs # */
+
+#container-header {
+  margin: 5px;
+  border: 2px;
+  border-bottom: 2px solid #F1C40F;
+  padding: 6px 10px 10px 10px;
+  display: flex;
+  height: auto;
+  width: 100vw;
+}
+
+#logo {
+  max-width: 23vw;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+#logo img{
+  width: 15vw;
+  height: auto;
+}
+
+#busca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  padding: 10px;
+}
+#input-busca {
+  border: 1.5px solid #F1C40F;
+  border-radius: 3px;
+  width: 45vw;
+  height: 30px;
+}
+#busca i {
+  position: relative;
+  margin: 7px;
+}
+
+#cart-btn a{
+  position: absolute;
+  font-size: 2rem;
+  align-self: center;
+  right: 13vw;
+}
+
+#menu-btn {
+  position: absolute;
+  right: 6vw;
+  align-self: center;
+  border: #F1C40F 1px solid;
+  border-radius: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+} 
+#menu-btn > div {
+  width: 28px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0px;
+}
+
+
+#menu-slide {
+  position: absolute;
+  right: 6vw;
+  top: -225px;
+  width: 130px;
+  max-height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  background: #FFFFFF;
+  border: 1.5px solid #F1C40F;
+  z-index: 3;
+}
+#menu-slide a{
+  width: 120px;
+  text-align: right;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+  font-size: 18px;
+  padding: 7px;
+}
+#menu-slide a:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#to-top-btn{
+  position: fixed;
+  font-size: 40px;
+  right: 20px;
+  bottom: 5px;
+  z-index: 1;
+}
+
+#container-carousel {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: #ffffff81;
+}
+
+#container-objetivos {
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100vw;
+  background-color: #f7f7f7;
+}
+
+#container-vitrine {
+  margin: 20px 0px 20px 0;
+  display: flex;
+  height: auto;
+  width: 100vw;
+  background-color: #ffffff81;
+}
+
+#container-nos {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  background-color: #f7f7f7;
+
+}
+#container-nos p{
+  padding: 10px 100px 10px 100px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+#container-contatos {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: auto;
+  background-color: #ffffff81;
+}
+
+#desenvolvimento{
+  text-align: center;
+  font-size: 12px;
+  background-color: #f7f7f7;
+  border-top: 1.5px solid #F1C40F;
+}
+
+
+/* class . */
+
+.carousel-inner {
+  min-height: 80vh;
+  max-height: 80vh;
+  min-width: 80vw;
+  max-width: 80vw;
+}
+.carousel-item img{
+  width: auto;
+  height: 80vh;
+}
+
+.imagens {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.imagens img{
+  margin: 20px;
+  border-radius: 10%;
+  opacity: 0.8;
+  width: 29vw;
+  height: auto;
+}
+
+.prateleira {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+.produto {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 28vw;
+  height: auto;
+  margin: 20px 10px;
+  border: 2px solid black;
+}
+.produto img{
+  height: 50vh;
+  width: 100%;
+  margin: 10px 0 0 0;
+  border-radius: 1%;
+  opacity: 0.7;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card-title{
+  font-weight: bold;
+}
+
+.contatos{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.comunicações{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.redes-sociais a{
+  font-size: 50px;
+  margin: 10px;
+}
+
+/* media */
+
+@media only screen and (min-width: 1441px) {
+  h3 {
+    font-size: 40px;
+  }
+  #logo img{
+    width: 15vw;
+  }
+  #busca {
+    width: 70vw;
+  }
+  #input-busca {
+    border: 2px solid #F1C40F;
+    width: 50vw;
+    height: 60px;
+  }
+  #busca i {
+    font-size: 2.5vh;
+  }
+  #cart-btn a{
+    font-size: 3rem;
+    right: 12vw;
+    margin: 30px;;
+  }
+  #menu-btn {
+    border: 2px solid #F1C40F;
+    padding: 10px 15px;
+  }
+  #menu-btn > div {
+    width: 50px;
+    height: 5px;
+    margin: 10px 0px;
+  }
+  #menu-slide {
+    width: 300px;
+    max-height: 400px;
+    border: 2px solid #F1C40F;
+    top: -425px;
+  }
+  #menu-slide a{
+    width: 290px;
+    font-size: 40px;
+    padding: 15px;
+  }
+  #to-top-btn{
+    font-size: 100px;  
+  }
+  .imagens img{
+    margin: 13px;
+  }
+  .produto {
+    max-width: 30vw;
+  }
+  .produto img{
+    height: 60vh;
+    margin: 15px 0 0 0;
+  }
+  .card-title{
+    font-size: 35px;
+  }
+  .card-text{
+    font-size: 30px;
+  }
+  .card-body a{
+    font-size: 30px;
+  }
+  #container-nos p{
+    padding: 10px 60px;
+    font-size: 35px;
+  }
+  .comunicações{
+    font-size: 30px;
+  }
+  .redes-sociais a{
+    font-size: 70px;
+    margin: 20px;
+  }
+  #desenvolvimento{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  #cart-btn a{
+    font-size: 2.1rem;
+    margin: 1.5vh;  
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #cart-btn a{
+    font-size: 1.8rem;
+    margin: 1.5vh;  
+  }
+  .produto img{
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .imagens img{
+    margin: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 25px;
+  }
+  #logo img{
+    width: 20vw;
+  }
+  #cart-btn a{
+    font-size: 1.5rem;
+    right: 12vw;
+    margin: 2.8vh;;
+  }
+  #menu-btn > div {
+    width: 23px;
+    height: 2px;
+  }
+  #menu-slide {
+    width: 120px;
+  }
+  #menu-slide a{
+    width: 110px;
+    font-size: 16px;
+  }
+  #to-top-btn{
+    font-size: 36px;  
+  }
+  .carousel-inner {
+    min-height: 70vh;
+    max-height: 70vh;
+  }
+  .carousel-item img{
+    height: 70vh;
+  }
+  .imagens img{
+    margin: 13px;
+  }
+  .produto {
+    max-width: 40vw;
+    margin: 15px 10px;
+  }
+  .produto img{
+    height: 40vh;
+  }
+  .card-title{
+    font-size: 20px;
+  }
+  .card-text{
+    font-size: 15px;
+  }
+  .card-body a{
+    font-size: 15px;
+  }
+  #container-nos p{
+    padding: 10px 60px;
+    font-size: 16px;
+  }
+  .comunicações{
+    font-size: 16px;
+  }
+  .redes-sociais a{
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-inner {
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+  .carousel-item img{
+    height: 60vh;
+  }
+  .card-title{
+    font-size: 17px;
+  }
+  .card-text{
+    font-size: 12px;
+  }
+  .card-body a{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imagens img{
+    margin: 15px;
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  #container-nos p{
+    padding: 10px 45px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  #cart-btn a{
+    right: 15vw;
+  }
+  .contatos{
+    width: 80vw;
+  }
+  
+  .comunicações{
+    font-size: 12px;
+  }
+  
+  .redes-sociais a{
+    font-size: 30px;
+    margin: 5px;
+  }
+  #desenvolvimento{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #busca {
+    display: none;
+  }  
+  #cart-btn a{
+    font-size: 1.5rem;
+    right: 20vw;
+  }
+  #menu-btn {
+    position: absolute;
+    right: 6vw;
+  }
+  #menu-btn > div {
+    width: 20px;
+    height: 2px;
+  }
+  #menu-slide {
+    width: 100px;
+    max-height: 140px;
+  }
+  #menu-slide a{
+    width: 90px;
+    font-size: 12px;
+  }
+  .carousel-inner {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+  .carousel-item img{
+    height: 50vh;
+  }
+  .produto img{
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 425px) {
+  h3 {
+    font-size: 20px;
+  }
+  #logo img{
+    width: 30vw;
+  }
+  #to-top-btn{
+    font-size: 32px;  
+  }
+  .carousel-inner {
+    min-height: 40vh;
+    max-height: 40vh;
+  }
+  .carousel-item img{
+    height: 40vh;
+  }
+  .imagens img{
+    width: 40vw;
+  }
+  .produto {
+    max-width: 45vw;
+    margin: 15px 10px;
+  }
+  .produto img{
+    height: 30vh;
+  }
+  .card-title{
+    font-size: 17px;
+  }
+  .card-text{
+    font-size: 12px;
+  }
+  .card-body a{
+    font-size: 12px;
+  }
+  #container-nos p{
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #cart-btn a{
+    margin: 2.8vh;;
+  }
+  #menu-slide {
+    width: 85px;
+    max-height: 120px;
+  }
+  #menu-slide a{
+    width: 75px;
+    font-size: 10px;
+  }
+  #to-top-btn{
+    font-size: 30px;
+  }
+  .produto {
+    max-width: 45vw;
+    margin: 10px 0;
+  }
+  .produto img{
+    height: 27vh;
+  }
+  .card-title{
+    font-size: 15px;
+  }
+  .card-text{
+    font-size: 10px;
+  }
+  .card-body a{
+    font-size: 10px;
+  } 
+  .contatos{
+    width: 90vw;
+  }
+  .comunicações{
+    font-size: 10px;
+  }
+  .redes-sociais a{
+    font-size: 24px;
+    margin: 5px;
+  }
+  #desenvolvimento{
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 15px;
+  }
+  .carousel-inner {
+    min-height: 30vh;
+    max-height: 30vh;
+  }
+  .carousel-item img{
+    height: 30vh;
+  }
+  .produto {
+    max-width: 70vw;
+  }
+  .produto img{
+    height: 30vh;
+  }
+  .card-title{
+    font-size: 12px;
+  }
+  #container-nos p{
+    padding: 10px;
+    font-size: 12px;
+  }
+  .comunicações{
+    font-size: 10px;
+  }
+  .redes-sociais a{
+    font-size: 22px;
+    margin: 2px;
+  }
+  #desenvolvimento{
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .imagens img{
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 300px) and (orientation: landscape) {
+  .produto img{
+    height: 35vh;
+    }
+}
+
+
