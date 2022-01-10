@@ -1,0 +1,1 @@
+Repositório de arquivos do teste realizado para a vaga de Front-End, onde o objetivo é criar uma SPA (Single Page Application) de vendas de produtos voltados para o segmento fitness e contendo determinados requisitos em seu visual e responsividade.
